@@ -1,0 +1,12 @@
+# PingPong_Calculator.py
+again = True
+while again:
+    height = int(input("Enter your height in cm: "))
+    weight = int(input("Enter your weight in kg: "))
+    ping_pong_tall = round(height / 4)
+    ping_pong_heavy = round(weight * 1000 / 2.7)
+    print("At", height, "cm and", weight, "kg,")
+    print('You measure', ping_pong_tall, 'Ping-Pong balls tall, and ')
+    print('You weigh the same as', ping_pong_heavy, 'Ping-Pong balls!')
+    keepgoing = input ('Do you want to restart code? (y/n) ')
+    again = (keepgoing == "y")
